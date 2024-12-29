@@ -2,3 +2,8 @@ build/
 build/*
 devel/
 devel/*
+.catkin_workspace
+log/
+log/*
+.vscode/
+.vscode/*
