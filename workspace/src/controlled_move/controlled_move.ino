@@ -26,7 +26,7 @@ void loop() {
         } else if (command == "s") {
             mecanum.setDutyCycle(-100, -100, -100, -100); // backward
         } else if (command == "d") {
-            mecanum.setDutyCycle(100, -100, -100, 100); // turn right
+            mecanum.setDutyCycle(100, -100, 100, -100); // turn right
         } else if (command == "x") {
             mecanum.setDutyCycle(0, 0, 0, 0); // stop
         }
