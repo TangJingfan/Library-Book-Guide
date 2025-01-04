@@ -3,7 +3,7 @@
 MecanumDriver mecanum(9, 8, 12, 13, 11, 10, 46, 21);
 
 String command;
-String lastCommand = "x"; // 初始化为停止状态
+String lastCommand = "x"; // init chassis; setting as 'stop'
 
 void setup() { 
     mecanum.begin();
@@ -14,11 +14,11 @@ void loop() {
     while (Serial.available() > 0) {
         char temp = char(Serial.read());
         if (temp != '\n' && temp != '\r') { 
-            command = temp; // 只保留最后一次有效指令
+            command = temp; // keep latest useful command
         }
     }
 
-    if (command != lastCommand) { // 如果命令有变化，则执行
+    if (command != lastCommand) { // execute last command if new command is entered
         if (command == "w") {
             mecanum.setDutyCycle(100, 100, 100, 100); // forward
         } else if (command == "a") {
@@ -31,6 +31,6 @@ void loop() {
             mecanum.setDutyCycle(0, 0, 0, 0); // stop
         }
 
-        lastCommand = command; // 更新上一次命令
+        lastCommand = command; // update command
     }
 }
