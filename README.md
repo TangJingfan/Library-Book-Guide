@@ -18,3 +18,24 @@ source devel/setup.bash
 sudo chmod 666 /dev/laser
 roslaunch rplidar_ros rplidar_slam.launch
 ```
+
+To launch Cartographer:
+First open terminal one:
+```sh
+cd ~/Library-Book-Guide/cat_ws
+catkin_make_isolated --only-pkg-with rplidar_ros --install
+source /opt/ros/melodic/setup.bash
+source install_isolated/setup.bash
+sudo chmod 666 /dev/laser
+roslaunch rplidar_ros rplidar_a1.launch
+```
+
+Then open another new terminal:
+```sh
+cd ~/Library-Book-Guide/cat_ws
+catkin_make_isolated --install --use-ninja #It can be ignored if problems exist
+source /opt/ros/melodic/setup.bash
+source install_isolated/setup.bash
+roslaunch cartographer_ros demo_revo_lds.launch
+```
+
