@@ -1,0 +1,12 @@
+prefix=/home/nano/Library-Book-Guide/cat_ws/install_isolated
+exec_prefix=${prefix}
+libdir=/home/nano/Library-Book-Guide/cat_ws/install_isolated/lib
+includedir=/home/nano/Library-Book-Guide/cat_ws/install_isolated/include
+
+Name: absl_civil_time
+Description: Abseil civil_time library
+URL: https://abseil.io/
+Version: 20240116
+Requires:
+Libs: -L${libdir}  -labsl_civil_time 
+Cflags: -I${includedir} -DNOMINMAX
