@@ -1,8 +1,0 @@
-prefix=/home/nano/Library-Book-Guide/cat_ws/devel_isolated/rplidar_ros
-
-Name: rplidar_ros
-Description: Description of rplidar_ros
-Version: 2.1.5
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

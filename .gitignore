@@ -12,3 +12,5 @@ build_isolated/*
 devel_isolated/
 devel_isolated/*
 .rosinstall
+install_isolated/
+install_isolated/*
