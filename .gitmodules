@@ -14,5 +14,6 @@
 	path = cartographer_ws/src/cartographer
 	url = git@github.com:TangJingfan/cartographer.git
 [submodule "cartographer_ws/abseil-cpp"]
-	path = cartographer_ws/abseil-cpp
-	url = git@github.com:TangJingfan/abseil-cpp.git
+        path = cartographer_ws/abseil-cpp
+        url = git@github.com:TangJingfan/abseil-cpp.git
+
