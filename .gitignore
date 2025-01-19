@@ -14,3 +14,12 @@ devel_isolated/*
 .rosinstall
 install_isolated/
 install_isolated/*
+manufacture/
+manufacture/*
+*.STL
+structure/2nd/
+*.DXF
+docs/
+.vscode/
+.vscode/*
+
