@@ -1,7 +1,9 @@
+#include <chrono>
 #include <fstream>
 #include <geometry_msgs/TransformStamped.h>
 #include <iostream>
 #include <ros/ros.h>
+#include <sstream>
 #include <tf/transform_datatypes.h>
 #include <tf/transform_listener.h>
 
@@ -31,9 +33,15 @@ int main(int argc, char **argv) {
 
   tf::TransformListener listener;
 
-  std::ofstream file(
-      "/home/nano/Library-Book-Guide/robot_positions/robot_positions.csv");
-  file << "index,second,millisecond,x,y,z,yaw" << std::endl;
+  auto now = std::chrono::system_clock::now();
+  auto now_time_t = std::chrono::system_clock::to_time_t(now);
+  std::stringstream filename;
+  filename << "/home/nano/Library-Book-Guide/robot_positions/robot_positions_"
+           << std::put_time(std::localtime(&now_time_t), "%Y%m%d_%H%M%S")
+           << ".csv";
+
+  std::ofstream file(filename.str());
+  file << "index,millisecond,x,y,z,yaw" << std::endl;
 
   ros::Rate rate(10.0);
 
