@@ -38,7 +38,7 @@ int main(int argc, char **argv) {
   ros::Rate rate(10.0);
 
   while (ros::ok()) {
-    recordPosition(listener, file);
+    record_position_with_time_stamp(listener, file);
     ros::spinOnce();
     rate.sleep();
   }
