@@ -41,7 +41,7 @@ int main(int argc, char **argv) {
            << ".csv";
 
   std::ofstream file(filename.str());
-  file << "index,millisecond,x,y,z,yaw" << std::endl;
+  file << "second,millisecond,x,y,z,yaw" << std::endl;
 
   ros::Rate rate(10.0);
 
