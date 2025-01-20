@@ -18,8 +18,8 @@ void record_position_with_time_stamp(const tf::TransformListener &listener,
     double roll, pitch, yaw;
     tf::Matrix3x3(q).getRPY(roll, pitch, yaw);
 
-    file << timestamp.toSec() << "," << x << "," << y << "," << z << "," << yaw
-         << std::endl;
+    file << timestamp.toSec() << "," << timestamp.toNSec() << "," << x << ","
+         << y << "," << z << "," << yaw << std::endl;
   } catch (tf::TransformException &ex) {
     ROS_WARN("%s", ex.what());
   }
@@ -33,7 +33,7 @@ int main(int argc, char **argv) {
 
   std::ofstream file(
       "/home/nano/Library-Book-Guide/robot_positions/robot_positions.csv");
-  file << "Timestamp,x,y,z,yaw" << std::endl;
+  file << "index,second,millisecond,x,y,z,yaw" << std::endl;
 
   ros::Rate rate(10.0);
 
