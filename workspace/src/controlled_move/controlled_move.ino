@@ -20,13 +20,13 @@ void loop() {
 
     if (command != lastCommand) { // execute last command if new command is entered
         if (command == "w") {
-            mecanum.setDutyCycle(100, 100, 100, 100); // forward
+            mecanum.setDutyCycle(50, 50, 50, 50); // forward
         } else if (command == "a") {
-            mecanum.setDutyCycle(-100, 100, -100, 100); // turn left
+            mecanum.setDutyCycle(-50, 50, -50, 50); // turn left
         } else if (command == "s") {
-            mecanum.setDutyCycle(-100, -100, -100, -100); // backward
+            mecanum.setDutyCycle(-50, -50, -50, -50); // backward
         } else if (command == "d") {
-            mecanum.setDutyCycle(100, -100, 100, -100); // turn right
+            mecanum.setDutyCycle(50, -50, 50, -50); // turn right
         } else if (command == "x") {
             mecanum.setDutyCycle(0, 0, 0, 0); // stop
         }
