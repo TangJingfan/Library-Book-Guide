@@ -1,0 +1,44 @@
+nano@jetson:~/Library-Book-Guide/cartographer_workspace$ ./carto_slam.sh ... logging to /home/nano/.ros/log/c19125b4-e9d4-11ef-9dac-76012d111f32/roslaunch-jetson-27720.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+
+started roslaunch server http://jetson:34781/
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: melodic
+ * /rosversion: 1.14.13
+ * /use_sim_time: False
+
+NODES
+  /
+    cartographer_node (cartographer_ros/cartographer_node)
+    cartographer_occupancy_grid_node (cartographer_ros/cartographer_occupancy_grid_node)
+    rviz (rviz/rviz)
+
+ROS_MASTER_URI=http://localhost:11311
+
+process[cartographer_node-1]: started with pid [27737]
+process[cartographer_occupancy_grid_node-2]: started with pid [27738]
+process[rviz-3]: started with pid [27739]
+[ INFO] [1739428774.380089473]: I0213 15:39:34.000000 27737 configuration_file_resolver.cc:41] Found '/home/nano/Library-Book-Guide/cartographer_workspace/install_isolated/share/cartographer_ros/configuration_files/revo_lds.lua' for 'revo_lds.lua'.
+[ INFO] [1739428774.395689838]: I0213 15:39:34.000000 27737 configuration_file_resolver.cc:41] Found '/home/nano/Library-Book-Guide/cartographer_workspace/install_isolated/share/cartographer/configuration_files/map_builder.lua' for 'map_builder.lua'.
+[ INFO] [1739428774.395899112]: I0213 15:39:34.000000 27737 configuration_file_resolver.cc:41] Found '/home/nano/Library-Book-Guide/cartographer_workspace/install_isolated/share/cartographer/configuration_files/map_builder.lua' for 'map_builder.lua'.
+[ INFO] [1739428774.396179429]: I0213 15:39:34.000000 27737 configuration_file_resolver.cc:41] Found '/home/nano/Library-Book-Guide/cartographer_workspace/install_isolated/share/cartographer/configuration_files/pose_graph.lua' for 'pose_graph.lua'.
+[ INFO] [1739428774.396500528]: I0213 15:39:34.000000 27737 configuration_file_resolver.cc:41] Found '/home/nano/Library-Book-Guide/cartographer_workspace/install_isolated/share/cartographer/configuration_files/pose_graph.lua' for 'pose_graph.lua'.
+[ INFO] [1739428774.397032672]: I0213 15:39:34.000000 27737 configuration_file_resolver.cc:41] Found '/home/nano/Library-Book-Guide/cartographer_workspace/install_isolated/share/cartographer/configuration_files/trajectory_builder.lua' for 'trajectory_builder.lua'.
+[ INFO] [1739428774.397191894]: I0213 15:39:34.000000 27737 configuration_file_resolver.cc:41] Found '/home/nano/Library-Book-Guide/cartographer_workspace/install_isolated/share/cartographer/configuration_files/trajectory_builder.lua' for 'trajectory_builder.lua'.
+[ INFO] [1739428774.397397314]: I0213 15:39:34.000000 27737 configuration_file_resolver.cc:41] Found '/home/nano/Library-Book-Guide/cartographer_workspace/install_isolated/share/cartographer/configuration_files/trajectory_builder_2d.lua' for 'trajectory_builder_2d.lua'.
+[ INFO] [1739428774.397528254]: I0213 15:39:34.000000 27737 configuration_file_resolver.cc:41] Found '/home/nano/Library-Book-Guide/cartographer_workspace/install_isolated/share/cartographer/configuration_files/trajectory_builder_2d.lua' for 'trajectory_builder_2d.lua'.
+[ INFO] [1739428774.397989668]: I0213 15:39:34.000000 27737 configuration_file_resolver.cc:41] Found '/home/nano/Library-Book-Guide/cartographer_workspace/install_isolated/share/cartographer/configuration_files/trajectory_builder_3d.lua' for 'trajectory_builder_3d.lua'.
+[ INFO] [1739428774.398123316]: I0213 15:39:34.000000 27737 configuration_file_resolver.cc:41] Found '/home/nano/Library-Book-Guide/cartographer_workspace/install_isolated/share/cartographer/configuration_files/trajectory_builder_3d.lua' for 'trajectory_builder_3d.lua'.
+[ INFO] [1739428774.452544901]: I0213 15:39:34.000000 27737 map_builder_bridge.cc:135] Added trajectory with ID '0'.
+[ INFO] [1739428774.655932150]: I0213 15:39:34.000000 27737 ordered_multi_queue.cc:172] All sensor data for trajectory 0 is available starting at '638750255746538306'.
+[ INFO] [1739428774.656171008]: I0213 15:39:34.000000 27737 local_trajectory_builder_2d.cc:135] Extrapolator is still initializing.
+[ INFO] [1739428774.811639906]: I0213 15:39:34.000000 27737 pose_graph_2d.cc:148] Inserted submap (0, 0).
+[ INFO] [1739428789.481370907]: I0213 15:39:49.000000 27737 collated_trajectory_builder.cc:81] scan rate: 7.22 Hz 1.39e-01 s +/- 5.50e-03 s (pulsed at 99.99% real time)
+
+
