@@ -42,3 +42,55 @@ process[rviz-3]: started with pid [27739]
 [ INFO] [1739428789.481370907]: I0213 15:39:49.000000 27737 collated_trajectory_builder.cc:81] scan rate: 7.22 Hz 1.39e-01 s +/- 5.50e-03 s (pulsed at 99.99% real time)
 
 
+
+
+nano@jetson:~/Autonomous-Ball-Pick-up-Car/cartographer_workspace$ ./carto_slam.sh 
+... logging to /home/nano/.ros/log/c19125b4-e9d4-11ef-9dac-76012d111f32/roslaunch-jetson-28423.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+
+started roslaunch server http://jetson:39485/
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: melodic
+ * /rosversion: 1.14.13
+ * /use_sim_time: False
+
+NODES
+  /
+    cartographer_node (cartographer_ros/cartographer_node)
+    cartographer_occupancy_grid_node (cartographer_ros/cartographer_occupancy_grid_node)
+    rviz (rviz/rviz)
+
+ROS_MASTER_URI=http://localhost:11311
+
+process[cartographer_node-1]: started with pid [28440]
+process[cartographer_occupancy_grid_node-2]: started with pid [28441]
+process[rviz-3]: started with pid [28449]
+[ INFO] [1739429050.888499699]: I0213 15:44:10.000000 28440 configuration_file_resolver.cc:41] Found '/home/nano/Autonomous-Ball-Pick-up-Car/cartographer_workspace/install_isolated/share/cartographer_ros/configuration_files/revo_lds.lua' for 'revo_lds.lua'.
+[ INFO] [1739429050.913909321]: I0213 15:44:10.000000 28440 configuration_file_resolver.cc:41] Found '/home/nano/Autonomous-Ball-Pick-up-Car/cartographer_workspace/install_isolated/share/cartographer/configuration_files/map_builder.lua' for 'map_builder.lua'.
+[ INFO] [1739429050.914101147]: I0213 15:44:10.000000 28440 configuration_file_resolver.cc:41] Found '/home/nano/Autonomous-Ball-Pick-up-Car/cartographer_workspace/install_isolated/share/cartographer/configuration_files/map_builder.lua' for 'map_builder.lua'.
+[ INFO] [1739429050.914351776]: I0213 15:44:10.000000 28440 configuration_file_resolver.cc:41] Found '/home/nano/Autonomous-Ball-Pick-up-Car/cartographer_workspace/install_isolated/share/cartographer/configuration_files/pose_graph.lua' for 'pose_graph.lua'.
+[ INFO] [1739429050.914485007]: I0213 15:44:10.000000 28440 configuration_file_resolver.cc:41] Found '/home/nano/Autonomous-Ball-Pick-up-Car/cartographer_workspace/install_isolated/share/cartographer/configuration_files/pose_graph.lua' for 'pose_graph.lua'.
+[ INFO] [1739429050.914989494]: I0213 15:44:10.000000 28440 configuration_file_resolver.cc:41] Found '/home/nano/Autonomous-Ball-Pick-up-Car/cartographer_workspace/install_isolated/share/cartographer/configuration_files/trajectory_builder.lua' for 'trajectory_builder.lua'.
+[ INFO] [1739429050.915153559]: I0213 15:44:10.000000 28440 configuration_file_resolver.cc:41] Found '/home/nano/Autonomous-Ball-Pick-up-Car/cartographer_workspace/install_isolated/share/cartographer/configuration_files/trajectory_builder.lua' for 'trajectory_builder.lua'.
+[ INFO] [1739429050.915377782]: I0213 15:44:10.000000 28440 configuration_file_resolver.cc:41] Found '/home/nano/Autonomous-Ball-Pick-up-Car/cartographer_workspace/install_isolated/share/cartographer/configuration_files/trajectory_builder_2d.lua' for 'trajectory_builder_2d.lua'.
+[ INFO] [1739429050.915515753]: I0213 15:44:10.000000 28440 configuration_file_resolver.cc:41] Found '/home/nano/Autonomous-Ball-Pick-up-Car/cartographer_workspace/install_isolated/share/cartographer/configuration_files/trajectory_builder_2d.lua' for 'trajectory_builder_2d.lua'.
+[ INFO] [1739429050.916051334]: I0213 15:44:10.000000 28440 configuration_file_resolver.cc:41] Found '/home/nano/Autonomous-Ball-Pick-up-Car/cartographer_workspace/install_isolated/share/cartographer/configuration_files/trajectory_builder_3d.lua' for 'trajectory_builder_3d.lua'.
+[ INFO] [1739429050.916200607]: I0213 15:44:10.000000 28440 configuration_file_resolver.cc:41] Found '/home/nano/Autonomous-Ball-Pick-up-Car/cartographer_workspace/install_isolated/share/cartographer/configuration_files/trajectory_builder_3d.lua' for 'trajectory_builder_3d.lua'.
+[ INFO] [1739429050.979494320]: I0213 15:44:10.000000 28440 map_builder_bridge.cc:135] Added trajectory with ID '0'.
+[ INFO] [1739429051.288608340]: I0213 15:44:11.000000 28440 ordered_multi_queue.cc:172] All sensor data for trajectory 0 is available starting at '638750258512850025'.
+[ INFO] [1739429051.288882407]: I0213 15:44:11.000000 28440 local_trajectory_builder_2d.cc:135] Extrapolator is still initializing.
+[ INFO] [1739429051.443153501]: I0213 15:44:11.000000 28440 pose_graph_2d.cc:148] Inserted submap (0, 0).
+[ INFO] [1739429066.088599156]: I0213 15:44:26.000000 28440 collated_trajectory_builder.cc:81] scan rate: 7.23 Hz 1.38e-01 s +/- 5.44e-03 s (pulsed at 100.01% real time)
+[ INFO] [1739429071.063680572]: I0213 15:44:31.000000 28440 pose_graph_2d.cc:148] Inserted submap (0, 1).
+[ INFO] [1739429071.064195476]: I0213 15:44:31.000000 28487 pose_graph_2d.cc:538] Remaining work items in queue: 0
+[ INFO] [1739429071.064340583]: I0213 15:44:31.000000 28487 constraint_builder_2d.cc:290] 0 computations resulted in 0 additional constraints.
+[ INFO] [1739429071.066483065]: I0213 15:44:31.000000 28487 constraint_builder_2d.cc:292] Score histogram:
+Count: 0
+[ INFO] [1739429081.147206967]: I0213 15:44:41.000000 28440 collated_trajectory_builder.cc:81] scan rate: 7.24 Hz 1.38e-01 s +/- 5.31e-03 s (pulsed at 100.00% real time)
+
